@@ -1,0 +1,23 @@
+  @import url("https://use.typekit.net/vsb3pbo.css");
+
+  :root {
+      --bg-color: #62D7C5;
+      --link-color: #FFFFFF;
+      --link-hover-color: ;
+      --pink-color: #FF0760;
+
+      --primary-font: 'objektiv-mk1', sans-serif;
+      --main-text-color: #000000;
+
+      --white-space: 1.2rem;
+  }
+
+
+  body {
+      background-color: var(--bg-color);
+  }
+
+  li {
+      font-family: var(--primary-font);
+      color: var(--link-color);
+  }
