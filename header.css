@@ -40,3 +40,10 @@ nav {
       transition: .5s;
       text-decoration: underline;
 }
+
+/*
+a:active {
+    text-decoration: underline;
+    font-size: 27px;
+}
+*/
