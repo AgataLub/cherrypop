@@ -44,3 +44,36 @@ nav {
 a:active {
     text-decoration: underline;
 }
+
+
+
+main {
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "title1 title2"
+        ".pictures";
+}
+
+.team {
+    grid-area: title1;
+    color: var(--link-color);
+}
+
+.contact-us {
+    grid-area: title2;
+    color: var(--link-color);
+}
+
+
+.pictures {
+    grid-area: pic;
+/*
+    display: flex;
+    justify-content: ;
+*/
+}
+
+
+
