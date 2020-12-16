@@ -53,7 +53,7 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "title1 title2"
-        ".pictures";
+        "pic txt";
 }
 
 .team {
@@ -69,10 +69,16 @@ main {
 
 .pictures {
     grid-area: pic;
+    width: 10vw;
+    height: 10vw;
 /*
     display: flex;
-    justify-content: ;
+    justify-content: center;
 */
+}
+
+.questions-test {
+    grid-area: txt;
 }
 
 
