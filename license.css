@@ -16,6 +16,8 @@
   body {
       background-color: var(--bg-color);
       font-family: var(--primary-font);
+      margin: auto;
+      max-width: 1200px;
   }
 
 nav {
@@ -41,20 +43,56 @@ nav {
       text-decoration: underline;
 }
 
+
 h1 {
     color: var(--link-color);
+    margin-top: 5%;
+    font-weight: 700;
+
+}
+
+p {
+    width: 31%;
+    margin-top: 3%;
+    font: var(--primary-font);
+    font-weight: 100;
+}
+
+#title {
+    position: absolute;
+}
+
+.form > h2 {
+    font: var(--primary-font);
 }
 
 .line {
-    background-color: var(--link-color);
+    border-color: var(--link-color);
+    width: 30%;
+    border-bottom: 10%;
+    border-style: solid;
+    border-width: thin;
 }
 
 .form {
     display: flex;
     flex-direction: column;
+    width: 30%;
+    margin-left: 55%;
 }
 
-.form
+input {
+    font: var(--primary-font);
+    font-size: 0.85rem;
+    border-radius: 1.5rem;
+    padding: 2.5%;
+    border-style: none;
+}
+
+#container {
+    margin-top: 10%
+
+}
 
 button.main {
     width: 8rem;
@@ -63,6 +101,9 @@ button.main {
     border-radius: 1.5rem;
     color: white;
     font: var(--primary-font);
+    margin-left: 76%;
+    margin-top: 2%;
+    border-style: none;
 }
 
 /*
