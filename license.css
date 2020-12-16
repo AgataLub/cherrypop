@@ -1,3 +1,8 @@
+{
+    box-sizing: border-box;
+}
+
+
 
 root {
     --bg-color: #62D7C5;
