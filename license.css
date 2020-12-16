@@ -1,66 +1,75 @@
-@import url("https://use.typekit.net/vsb3pbo.css");
 
-  :root {
-      --bg-color: #62D7C5;
-      --link-color: #FFFFFF;
-      --link-hover-color: ;
-      --pink-color: #FF0760;
+root {
+    --bg-color: #62D7C5;
+    --link-color: #FFFFFF;
+    --link-hover-color: ;
+    --pink-color: #FF0760;
+    --light-grey: #909090;
+    --primary-font: 'objektiv-mk2', sans-serif;
+    --main-text-color: #000000;
 
-      --primary-font: 'objektiv-mk1', sans-serif;
-      --main-text-color: #000000;
-
-      --white-space: 1.2rem;
-  }
+    --white-space: 1.2rem;
+}
 
 
-  body {
-      background-color: var(--bg-color);
-      font-family: var(--primary-font);
-      margin: auto;
-      max-width: 1200px;
-  }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--primary-font);
+    margin: auto;
+    max-width: 1300px;
+    font-style: normal;
+    font size: 1rem;
+}
 
 nav {
     margin-top: 2rem;
 }
 
-  nav ul {
-      list-style-type: none;
-      display: flex;
-      justify-content: left;
-  }
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+}
 
-  a {
-      color: var(--link-color);
-      text-decoration: none;
-      list-style-type: none;
-      padding: 1.5rem;
-  }
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1.5rem;
+}
 
-  a:hover {
-      font-size: 27px;
-      transition: .5s;
-      text-decoration: underline;
+a:hover {
+    font-size: 27px;
+    transition: .5s;
+    text-decoration: underline;
 }
 
 
 h1 {
     color: var(--link-color);
     margin-top: 5%;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 1.5em;
 
 }
 
 p {
-    width: 31%;
+    width: 30vw;
     margin-top: 3%;
     font: var(--primary-font);
     font-weight: 100;
 }
 
-#title {
-    position: absolute;
+#description {
+    width: 90vw;
+    margin-left: 5%;
 }
+
 
 .form > h2 {
     font: var(--primary-font);
@@ -85,14 +94,17 @@ input {
     font: var(--primary-font);
     font-size: 0.85rem;
     border-radius: 1.5rem;
-    padding: 2.5%;
+    padding: 3%;
     border-style: none;
+    font-weight: 100;
 }
 
 #container {
-    margin-top: 10%
-
+    position: relative;
+    width: 100%;
 }
+
+
 
 button.main {
     width: 8rem;
@@ -101,9 +113,36 @@ button.main {
     border-radius: 1.5rem;
     color: white;
     font: var(--primary-font);
-    margin-left: 76%;
+    margin-left: 75%;
     margin-top: 2%;
     border-style: none;
+    cursor: pointer;
+}
+
+#school > input {
+    height: 100px;
+    width: 100%;
+    padding-bottom: 15%;
+    padding-left: 4%;
+}
+
+#amount > input {
+    padding: 5%;
+    width: 30%;
+    border-radius: 1rem;
+    margin-left: 70%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#amount > h2 {
+    position: absolute;
+    margin-top: 3.5%
+}
+
+.form > h2 {
+    margin-top: 2%;
+    font-weight: 100;
 }
 
 /*
