@@ -20,6 +20,8 @@ body {
     font-size: 18px;
 }
 
+/*STYLING NAVIGATION*/
+
 nav {
     margin-top: 2rem;
 }
@@ -48,6 +50,11 @@ a:active {
     text-decoration: underline;
 }
 
+
+
+
+
+/*HEADING STYLING*/
 h2 {
     font-weight: 300;
     font-size: 18px;
@@ -61,6 +68,15 @@ h2 {
     align-content: flex-start;
 }
 
+.contact-us {
+    grid-area: title2;
+    color: var(--link-color);
+    margin-bottom: 0;
+}
+
+
+
+
 .team-container {
     grid-area: pic;
     margin-bottom: 2rem;
@@ -71,16 +87,12 @@ h2 {
     flex-wrap: wrap;
 }
 
-.contact-us {
-    grid-area: title2;
-    color: var(--link-color);
-    margin-bottom: 0;
-}
-
 .questions-text {
     grid-area: txt;
 }
 
+
+/*FORM*/
 input {
     font: var(--primary-font);
     font-size: 18px;
@@ -88,7 +100,6 @@ input {
     padding: .8rem;
     border-style: none;
 }
-
 
 button {
     width: 8rem;
@@ -141,7 +152,7 @@ button {
         font-size: 25px;
     }
 
-
+/*    FORM STYLING*/
     input {
         width: 100%;
     }
@@ -193,6 +204,8 @@ button {
         font-size: 25px;
     }
 
+
+/*FORM STYLING*/
     input {
         width: 90%;
     }
