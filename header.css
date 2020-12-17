@@ -12,12 +12,6 @@
       --white-space: 1.2rem;
   }
 
-/*
-header {
-    padding: 2rem;
-}
-*/
-
   body {
       background-color: var(--bg-color);
       font-family: var(--primary-font);
@@ -47,9 +41,8 @@ nav {
       text-decoration: underline;
 }
 
-/*
-a:active {
-    text-decoration: underline;
-    font-size: 27px;
+footer {
+    background-color: var(--link-color);
+    width: 100%;
+    height: 150px;
 }
-*/
