@@ -203,7 +203,7 @@ button.form{
     margin: 0.2rem;
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 900px) and (max-width:1099px){
     main{
         min-width: 800px;
         max-width: 1700px;
@@ -231,10 +231,117 @@ button.form{
         bottom: -20%;
     }
     .scrolldown{
+        display: none;
+    }
+
+    #conversation{
+        display: flex;
+        height: auto;
+        margin-top: -3rem;
+    }
+    #conversation > img {
+        display: block;
+        width: 30%;
+    }
+    img#texts{
+        margin: -8vw 2rem 0 -7vw;
+    }
+    #whyus {
+        margin-top: 4rem;
+    }
+    #whyus > ol{
+        display: flex;
+    }
+    #whyus > ol >li {
+        padding: 3rem;
+    }
+    #whyus > div.underline{
+        width: 20%;
+    }
+    #decoration{
+        display: flex;
+        height: 15vw;
+        margin: 0 0;
+    }
+    
+    #decoration > img {
+        padding: 1rem;
+    }
+    #contactinsta{
+        align-items: center;
+        justify-items: center;
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+    #contact {
+        grid-area: 1 / 1 / span 1 / span 1;
+    width: 400px;
+    }
+    #contact_form {
+        grid-area: 2 / 1 / span 1 / span 1;
+        width: 400px;
+    }
+    #contact_form > h3 {
+        margin: 0;
+    }
+    #instagram{
+        grid-area: 1 / 2 / span 2 / span 1;
+        width: 400px;
+    }
+}
+
+
+@media only screen and (min-width: 1100px){
+    main{
+        min-width: 800px;
+        max-width: 1700px;
+        padding: 3rem;
+    }
+    #top {
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        grid-template-rows: 5fr 1fr;
+    }
+    article{
+        max-width: 500px;
+    }
+    #phonedescription{
+        grid-area: 1 / 1 / span 1 / span 1;
+        max-width: 400px;
+        align-self: center; 
+    }
+    #mockup{
+        grid-area: 1 / 2 / span 1 / span 1;
+        height: 90%;
+    }
+    #mockup > img {
+        height: 90%;
+        bottom: -20%;
+    }
+    #mockup > p {
+        display: block;
+        position: absolute;
+        width: 15vw;
+        top: 25px;
+        right: 30vw;
+        font-size: 0.9rem;
+    }
+    #arrow_mockup{
+    width: 6vw;
+    height: 3px;
+    background-color: var(--white);
+    rotate: 45deg;
+    position: absolute;
+    top: 150px;
+    right: 30vw;
+    }
+    .scrolldown{
         display: flex;
         background-color: var(--white);
-        width: 180px;
-        height: 4rem;
+        width: 200px;
+        height: 3rem;
         grid-area: 2 / 1 / span 1 / span 2;
         padding: 1rem;
         border-radius: 2rem;
@@ -244,12 +351,13 @@ button.form{
     }
 
     .scrolldown > img{
-        height: 2rem;
+        height: 1.5rem;
         width: auto;
     }
     .scrolldown > strong{
         color: var(--teal-color);
     font-size: 0.7rem;
+    align-self: center;
     margin-left: 1rem;
     }
     #conversation{
