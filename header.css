@@ -12,6 +12,11 @@
       --white-space: 1.2rem;
   }
 
+/*
+header {
+    padding: 2rem;
+}
+*/
 
   body {
       background-color: var(--bg-color);
