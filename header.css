@@ -1,73 +1,82 @@
-  @import url("https://use.typekit.net/vsb3pbo.css");
+ :root {
+     --bg-color: #62D7C5;
+     --link-color: #FFFFFF;
+     --link-hover-color: ;
+     --pink-color: #FF0760;
 
-  :root {
-      --bg-color: #62D7C5;
-      --link-color: #FFFFFF;
-      --link-hover-color: ;
-      --pink-color: #FF0760;
+     --primary-font: 'objektiv-mk1', sans-serif;
+     --main-text-color: #000000;
 
-      --primary-font: 'objektiv-mk1', sans-serif;
-      --main-text-color: #000000;
+     --white-space: 1.2rem;
+ }
 
-      --white-space: 1.2rem;
-  }
+ body {
+     background-color: var(--bg-color);
+     font-family: var(--primary-font);
+     font-weight: 300;
+ }
 
-  body {
-      background-color: var(--bg-color);
-      font-family: var(--primary-font);
-  }
+ nav {
+     margin-top: 2rem;
+ }
 
-  nav {
-      margin-top: 2rem;
-  }
+ nav ul {
+     list-style-type: none;
+     display: flex;
+     justify-content: left;
+     font-weight: 500;
+ }
 
-  nav ul {
-      list-style-type: none;
-      display: flex;
-      justify-content: left;
-      font-weight: 500;
-  }
+ a {
+     color: var(--link-color);
+     text-decoration: none;
+     list-style-type: none;
+     padding: 1.5rem;
+ }
 
-  a {
-      color: var(--link-color);
-      text-decoration: none;
-      list-style-type: none;
-      padding: 1.5rem;
-  }
+ a:hover {
+     font-size: 27px;
+     transition: .5s;
+     text-decoration: underline;
+ }
 
-  a:hover {
-      font-size: 27px;
-      transition: .5s;
-      text-decoration: underline;
-  }
-
-  .icon-mail {
-      grid-area: ic;
-      width: 2rem;
-      height: auto;
-  }
+ .icon-mail {
+     grid-area: ic;
+     width: 2rem;
+     height: auto;
+ }
 
 
-.cherry-info {
-    grid-area: info;
-}
+ .cherry-info {
+     grid-area: info;
 
-.logo {
-    grid-area: logo;
-    width: 20%;
-    height: auto;
-}
+ }
 
-.cherry-address {
-    grid-area: ad;
-}
+ .logo {
+     grid-area: logo;
+     width: auto;
+     height: 8vw;
+ }
 
-  footer {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas:
-          "info logo ad";
-      background-color: var(--link-color);
-      width: auto;
-      height: 150px;
-  }
+ .cherry-address {
+     grid-area: ad;
+ }
+
+ footer {
+     padding-left: 4rem;
+     padding-right: 4rem;
+     display: flex;
+     justify-content: space-between;
+     background-color: var(--link-color);
+     width: auto;
+ }
+
+
+
+ /*MOBILE VIEW*/
+ @media only screen and (max-width: 599px) {
+     .hidden {
+         display: none;
+     }
+
+ }
