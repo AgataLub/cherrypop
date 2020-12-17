@@ -1,4 +1,4 @@
-  @import url("https://use.typekit.net/vsb3pbo.css");
+/*  @import url("https://use.typekit.net/vsb3pbo.css");*/
 
   :root {
       --bg-color: #62D7C5;
@@ -6,7 +6,7 @@
       --link-hover-color: ;
       --pink-color: #FF0760;
 
-      --primary-font: 'objektiv-mk1', sans-serif;
+      --primary-font: 'objektiv-mk2', sans-serif;
       --main-text-color: #000000;
 
       --white-space: 1.2rem;
@@ -16,9 +16,12 @@
   body {
       background-color: var(--bg-color);
       font-family: var(--primary-font);
-  }
+      font-weight: 300;
+ }
 
-  main {}
+  main {
+
+}
 
   nav {
       margin-top: 2rem;
@@ -28,6 +31,7 @@
       list-style-type: none;
       display: flex;
       justify-content: left;
+      font-weight: 500;
   }
 
   a {
@@ -55,6 +59,7 @@
 
   .team-container {
       grid-area: pic;
+      margin-bottom: 2rem;
   }
 
   .team-pictures {
@@ -104,9 +109,12 @@
           border-bottom: 2px solid;
           color: var(--link-color);
           width: 100%;
-/*          height: 5%;*/
+          height: 2%;
           margin-bottom: 2rem;
+      }
 
+      h1 {
+          font-size: 25px;
       }
 
 
@@ -141,6 +149,8 @@
           margin-bottom: 2rem;
 
       }
+
+
 
 
   }
