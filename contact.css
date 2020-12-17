@@ -18,6 +18,8 @@
       font-family: var(--primary-font);
   }
 
+  main {}
+
   nav {
       margin-top: 2rem;
   }
@@ -48,24 +50,31 @@
   .team {
       grid-area: title1;
       color: var(--link-color);
+      margin-bottom: 0;
+  }
+
+  .team-container {
+      grid-area: pic;
+  }
+
+  .team-pictures {
+      display: flex;
+      flex-wrap: wrap;
   }
 
   .contact-us {
       grid-area: title2;
       color: var(--link-color);
+      margin-bottom: 0;
+
   }
 
   .questions-text {
       grid-area: txt;
-
   }
 
-  .line {
-      border-bottom: 2px solid;
-      color: var(--link-color);
-      width: 60%;
-      height: 5%;
-  }
+
+
 
 
 
@@ -84,12 +93,28 @@
               "txt";
       }
 
+      .img-team {
+          width: 8rem;
+          height: auto;
+          padding-right: .5rem;
+          padding-bottom: .5rem;
+      }
+
+      .line {
+          border-bottom: 2px solid;
+          color: var(--link-color);
+          width: 100%;
+/*          height: 5%;*/
+          margin-bottom: 2rem;
+
+      }
+
 
   }
 
 
   /*BIG SCREEN*/
-  @media only screen and (max-width: 1500px) and (min-width: 600px) {
+  @media only screen and (max-width: 1900px) and (min-width: 600px) {
 
       main {
           margin: 4rem;
@@ -99,3 +124,23 @@
               "title1 title2"
               "pic txt";
       }
+
+      .img-team {
+          width: 12rem;
+          height: auto;
+          padding-right: 1rem;
+          padding-bottom: 1rem;
+
+      }
+
+      .line {
+          border-bottom: 2px solid;
+          color: var(--link-color);
+          width: 60%;
+          height: 2%;
+          margin-bottom: 2rem;
+
+      }
+
+
+  }
