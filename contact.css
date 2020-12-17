@@ -163,29 +163,44 @@ button {
     main {
         margin: 4rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-            "title1 title2"
-            "pic txt";
+            "title1"
+            "pic"
+            "title2"
+            "txt";
     }
 
     .img-team {
-        width: 12rem;
+        display: flex;
+        flex-direction: row;
+        width: 22vw;
         height: auto;
-        padding-right: 1rem;
-        padding-bottom: 1rem;
+        padding-right: .5rem;
+        padding-bottom: .5rem;
 
     }
 
     .line {
         border-bottom: 2px solid;
         color: var(--link-color);
-        width: 60%;
+        width: 80%;
         height: 2%;
         margin-bottom: 2rem;
-
     }
 
+    h1 {
+        font-size: 25px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .input-question {
+        width: 90%;
+        height: 7rem;
+    }
 
 }
 
@@ -204,10 +219,10 @@ button {
     }
 
     .img-team {
-        width: 12rem;
+        width: 12vw;
         height: auto;
-        padding-right: 1rem;
-        padding-bottom: 1rem;
+        padding-right: .5rem;
+        padding-bottom: .5rem;
 
     }
 
@@ -231,17 +246,17 @@ button {
     }
 
     input {
-        width: 50%;
+        width: 75%;
     }
 
     .input-question {
-        width: 70%;
+        width: 80%;
         height: 7rem;
     }
 
     button {
-        margin-left: 55%;
-        margin-top: 2%;
+        margin-left: 65%;
+        margin-top: 4%;
     }
 
 }
