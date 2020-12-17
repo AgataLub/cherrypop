@@ -50,6 +50,14 @@ a:active {
     text-decoration: underline;
 }
 
+.pic {
+    position:absolute;
+    bottom: 1px;
+    right: 1px;
+    width:auto;
+    height: 90vh;
+    z-index: 0;
+}
 
 /*HEADING STYLING*/
 h2 {
@@ -68,7 +76,12 @@ h1 {
 /*GRID ELEMENTS*/
 
 .faq-container {
+grid-area: faq-container;
+    z-index: 5;
+}
 
+.artwork-container {
+    grid-area: artwork-container;
 }
 
 /*MOBILE VIEW*/
