@@ -17,9 +17,9 @@
       font-family: var(--primary-font);
   }
 
-nav {
-    margin-top: 2rem;
-}
+  nav {
+      margin-top: 2rem;
+  }
 
   nav ul {
       list-style-type: none;
@@ -39,10 +39,35 @@ nav {
       font-size: 27px;
       transition: .5s;
       text-decoration: underline;
+  }
+
+  .icon-mail {
+      grid-area: ic;
+      width: 2rem;
+      height: auto;
+  }
+
+
+.cherry-info {
+    grid-area: info;
 }
 
-footer {
-    background-color: var(--link-color);
-    width: 100%;
-    height: 150px;
+.logo {
+    grid-area: logo;
+    width: 20%;
+    height: auto;
 }
+
+.cherry-address {
+    grid-area: ad;
+}
+
+  footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+          "info logo ad";
+      background-color: var(--link-color);
+      width: auto;
+      height: 150px;
+  }
