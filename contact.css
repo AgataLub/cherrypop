@@ -16,12 +16,18 @@ body {
     font-family: var(--primary-font);
     font-weight: 300;
     font-size: 18px;
+    position: absolute;
+}
+
+main {
+    padding-top: 2rem;
 }
 
 /*STYLING NAVIGATION*/
 
 nav {
     margin-top: 2rem;
+    position: absolute;
 }
 
 nav ul {
@@ -253,9 +259,9 @@ footer {
         justify-self: center;
     }
 
-.hidden {
-    display: none;
-}
+    .hidden {
+        display: none;
+    }
 }
 
 /*TABLET VIEW */

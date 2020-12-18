@@ -14,10 +14,19 @@
      background-color: var(--bg-color);
      font-family: var(--primary-font);
      font-weight: 300;
+     position: absolute;
+
+ }
+
+ main {
+     padding-top: 2rem;
+
  }
 
  nav {
      margin-top: 2rem;
+     position: absolute;
+
  }
 
  nav ul {
