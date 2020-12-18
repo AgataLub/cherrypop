@@ -59,10 +59,13 @@ a:active {
     z-index: 0;
 }
 
+
+
 /*HEADING STYLING*/
 h2 {
-    font-weight: 300;
-    font-size: 18px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
 }
 
 h1 {
@@ -71,6 +74,12 @@ h1 {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
+}
+
+hr {
+    border-top: 2px solid white;
+    width: 65%;
+    margin-left: 0px;
 }
 
 /*GRID ELEMENTS*/

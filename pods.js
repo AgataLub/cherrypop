@@ -2,8 +2,6 @@ window.addEventListener("load", fetchQuestions);
 
     //Fill fields
 
-    fetchQuestions();
-
     function fetchQuestions() {
         console.log("fetchQuestion");
         fetch("https://agataswistak.com/wordpress/wp-json/wp/v2/faq")
