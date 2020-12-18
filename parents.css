@@ -50,16 +50,6 @@ a:active {
     text-decoration: underline;
 }
 
-.pic {
-    position:absolute;
-    bottom: 1px;
-    right: 1px;
-    width:auto;
-    height: 90vh;
-    z-index: 0;
-}
-
-
 
 /*HEADING STYLING*/
 h2 {
@@ -85,12 +75,18 @@ hr {
 /*GRID ELEMENTS*/
 
 .faq-container {
-grid-area: faq-container;
+    grid-area: faq-container;
     z-index: 5;
 }
 
 .artwork-container {
     grid-area: artwork-container;
+}
+
+/*FAQ ELEMENTS*/
+
+.faq-question {
+    cursor: grab;
 }
 
 /*MOBILE VIEW*/
@@ -109,7 +105,12 @@ grid-area: faq-container;
         font-size: 25px;
     }
 
-/*    FORM STYLING*/
+    .pic {
+        width: auto;
+        height: 70vh;
+    }
+
+    /*    FORM STYLING*/
     input {
         width: 100%;
     }
@@ -133,7 +134,7 @@ grid-area: faq-container;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
-          "faq-container"
+            "faq-container"
             "artwork-container";
     }
 
@@ -141,16 +142,10 @@ grid-area: faq-container;
         font-size: 25px;
     }
 
-/*FORM STYLING*/
-    input {
-        width: 90%;
+    .pic {
+        width: auto;
+        height: 70vh;
     }
-
-    .input-question {
-        width: 90%;
-        height: 7rem;
-    }
-
 }
 
 /*BIG SCREEN*/
@@ -169,4 +164,30 @@ grid-area: faq-container;
         margin-top: 4%;
     }
 
+    .pic {
+        position: absolute;
+        bottom: 1px;
+        right: 1px;
+        width: 40vw;
+        height: auto;
+        z-index: 0;
+    }
+}
+
+/*TRANSITIONS*/
+
+.visible {
+    display: block;
+    animation: visible-kf 0.5s both;
+}
+
+@keyframes visible-kf {
+    0% {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

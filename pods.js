@@ -31,17 +31,20 @@ window.addEventListener("load", fetchQuestions);
         myCopy.querySelector(".faq-question").textContent = myQuestion.question;
         myCopy.querySelector(".faq-answer").textContent = myQuestion.answer;
 
+        myCopy.querySelector(".faq-question").addEventListener("click", toggleFAQ);
+        myCopy.querySelector(".faq-answer").style.display = "none";
+
         const parentElem = document.querySelector(".faq-container");
         parentElem.appendChild(myCopy);
+
+        function toggleFAQ() {
+    console.log("toggleFAQ");
+    var x = myCopy.querySelector(".faq-answer");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
     }
 
-//<<<<<<< HEAD
-//var slider = document.querySelector("#myRange");
-//    var output = document.querySelector("#demo");
-//    output.innerHTML = slider.value;
-//        console.log("This.value:" + this.value + "output.innerHTML" + output.innerHTML);
-//
-//    slider.oninput = function() {
-//        output.innerHTML = this.value;
-//    }
-//=======
