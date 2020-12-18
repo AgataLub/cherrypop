@@ -42,11 +42,15 @@
 
  .icon-mail {
      grid-area: ic;
-     width: 2rem;
+     width: 1.5rem;
      height: auto;
-
  }
 
+ .icon-phone {
+     grid-area: ic2;
+     width: 1.5rem;
+     height: auto;
+ }
 
  .cherry-info {
      grid-area: info;
@@ -74,6 +78,14 @@
 
  .cherry-address {
      grid-area: ad;
+
+ }
+
+ .cherry-address p {
+     max-width: 300px;
+     white-space: wrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
  }
 
  footer {
@@ -92,6 +104,14 @@
  @media only screen and (max-width: 599px) {
      .hidden {
          display: none;
+     }
+
+     footer {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-areas:
+             "info"
+             "ad";
      }
 
  }
