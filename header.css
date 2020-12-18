@@ -4,7 +4,7 @@
      --link-hover-color: ;
      --pink-color: #FF0760;
 
-     --primary-font: 'objektiv-mk1', sans-serif;
+     --primary-font: 'objektiv-mk2', sans-serif;
      --main-text-color: #000000;
 
      --white-space: 1.2rem;
@@ -44,12 +44,26 @@
      grid-area: ic;
      width: 2rem;
      height: auto;
+
  }
 
 
  .cherry-info {
      grid-area: info;
+ }
 
+ .phone-info {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .mail-info {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
  }
 
  .logo {
@@ -65,6 +79,7 @@
  footer {
      padding-left: 4rem;
      padding-right: 4rem;
+     padding: 1rem;
      display: flex;
      justify-content: space-between;
      background-color: var(--link-color);
