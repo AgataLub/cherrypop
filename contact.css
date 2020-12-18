@@ -110,7 +110,7 @@ button {
     border-radius: 1.5rem;
     color: white;
     font: var(--primary-font);
-    font-weight: 550;
+    font-weight: 500;
     border-style: none;
     cursor: pointer;
     margin-top: 2rem;
@@ -165,7 +165,6 @@ button {
 .cherry-address p {
     max-width: 300px;
     font-size: 1rem;
-    white-space: wrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
