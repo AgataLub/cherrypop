@@ -1,0 +1,193 @@
+/*  @import url("https://use.typekit.net/vsb3pbo.css");*/
+
+:root {
+    --bg-color: #62D7C5;
+    --link-color: #FFFFFF;
+    --link-hover-color: ;
+    --pink-color: #FF0760;
+
+    --primary-font: 'objektiv-mk2', sans-serif;
+    --main-text-color: #000000;
+
+    --white-space: 1.2rem;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/*STYLING NAVIGATION*/
+
+nav {
+    margin-top: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    font-weight: 500;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1.5rem;
+}
+
+a:hover {
+    font-size: 27px;
+    transition: .5s;
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+/*HEADING STYLING*/
+h2 {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+h1 {
+    grid-area: title1;
+    color: var(--link-color);
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+hr {
+    border-top: 2px solid white;
+    width: 65%;
+    margin-left: 0px;
+}
+
+/*GRID ELEMENTS*/
+
+.faq-container {
+    grid-area: faq-container;
+    z-index: 5;
+}
+
+.artwork-container {
+    grid-area: artwork-container;
+}
+
+/*FAQ ELEMENTS*/
+
+.faq-question {
+    cursor: grab;
+}
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 599px) {
+
+    main {
+        margin: 4rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "faq-container"
+            "artwork-container";
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .pic {
+        width: auto;
+        height: 70vh;
+    }
+
+    /*    FORM STYLING*/
+    input {
+        width: 100%;
+    }
+
+    .input-question {
+        width: 100%;
+        height: 7rem;
+    }
+
+    button {
+        margin-left: 75%;
+        margin-top: 2%;
+    }
+}
+
+/*TABLET VIEW */
+
+@media only screen and (max-width: 899px) and (min-width: 600px) {
+    main {
+        margin: 4rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "faq-container"
+            "artwork-container";
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .pic {
+        width: auto;
+        height: 70vh;
+    }
+}
+
+/*BIG SCREEN*/
+@media only screen and (min-width: 900px) {
+
+    main {
+        margin: 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "faq-container artwork-container";
+    }
+
+    button {
+        margin-left: 65%;
+        margin-top: 4%;
+    }
+
+    .pic {
+        position: absolute;
+        bottom: 1px;
+        right: 1px;
+        width: 40vw;
+        height: auto;
+        z-index: 0;
+    }
+}
+
+/*TRANSITIONS*/
+
+.visible {
+    display: block;
+    animation: visible-kf 0.5s both;
+}
+
+@keyframes visible-kf {
+    0% {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
