@@ -10,7 +10,6 @@
     --white-space: 1.2rem;
 }
 
-
 body {
     background-color: var(--bg-color);
     font-family: var(--primary-font);
