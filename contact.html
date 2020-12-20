@@ -7,21 +7,23 @@
     <title>Cherry Pop Site</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="http://use.typekit.net/vtd8skk.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="">
+            <div class="burger_menu">
+                <div class="topline"></div>
+                <div class="bottomline"></div>
+            </div>
             <ul>
-                <li> <a href="product.html">Product</a></li>
-                <li> <a href="parents.html">Parents</a></li>
-                <li> <a href="teachers.html">Teachers</a></li>
-                <li> <a href="contact.html">Contact us</a></li>
-
-
+                <li> <a href="product.html">Product</a><div class="dotnav"></div></li>
+                <li> <a href="parents.html">Parents</a><div class="dotnav"></div></li>
+                <li> <a href="teachers.html">Teachers</a><div class="dotnav"></div></li>
+                <li class="active"> <a href="contact.html">Contact us</a><div class="dotnav"></div></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
@@ -36,11 +38,11 @@
 
             <div class="team-pictures">
 
-                <img class=img-team src="img/madeleine.png" alt="photo of madeleine with blond bob hair smiling">
-                <img class=img-team src="img/asa.png" alt="photo of asa wearing an orange vest smiling with teeth on white background ">
-                <img class=img-team src="img/ludmilla.png" alt="photo of ludmilla wearing a light blue shirt with dark brown long hair on a white background">
-                <img class=img-team src="img/Izabela.png" alt="photo of izabela laughing with eyes closed with dark blond hair on a white background">
-                <img class=img-team src="img/oddur.png" alt="photo of oddur in a black shirt having his arms volded on a white background">
+                <img class=img-team loading="lazy" src="img/madeleine.png" alt="photo of madeleine with blond bob hair smiling">
+                <img class=img-team loading="lazy" src="img/asa.png" alt="photo of asa wearing an orange vest smiling with teeth on white background ">
+                <img class=img-team loading="lazy" src="img/ludmilla.png" alt="photo of ludmilla wearing a light blue shirt with dark brown long hair on a white background">
+                <img class=img-team loading="lazy" src="img/Izabela.png" alt="photo of izabela laughing with eyes closed with dark blond hair on a white background">
+                <img class=img-team loading="lazy" src="img/oddur.png" alt="photo of oddur in a black shirt having his arms volded on a white background">
 
             </div>
 
@@ -69,7 +71,7 @@
                     <input class="input-question" type="text" placeholder="Tell us your question...">
                 </div>
 
-                <button>Submit!</button>
+                <button class="form">Submit!</button>
 
             </div>
         </div>
@@ -103,5 +105,5 @@
 
     </footer>
 
-
+    <script src="menu.js"></script>
 </body></html>

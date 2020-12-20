@@ -18,6 +18,7 @@ h1{
     font-size: 1.4rem;
     font-weight: 900;
     width: 85%;
+    color: white;
 }
 
 p{
@@ -190,7 +191,7 @@ footer {
         max-width: 1700px;
         padding: 3rem;
     }
-    article{
+    article , .team-container, .contact-container{
         max-width: 500px;
     }
     footer {

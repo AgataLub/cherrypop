@@ -20,42 +20,11 @@ body {
     font-size: 18px;
 }
 
-/*STYLING NAVIGATION*/
-
-nav {
-    margin-top: 2rem;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: left;
-    font-weight: 500;
-}
-
-a {
-    color: var(--link-color);
-    text-decoration: none;
-    list-style-type: none;
-    padding: 1.5rem;
-}
-
-a:hover {
-    font-size: 27px;
-    transition: .5s;
-    text-decoration: underline;
-}
-
-a:active {
-    text-decoration: underline;
-}
-
-
 /*HEADING STYLING*/
 h2 {
-    font-size: 20px;
     color: white;
     font-weight: 600;
+    font-size: 1.2rem;
 }
 
 h1 {
@@ -94,20 +63,16 @@ hr {
 
     main {
         margin: 4rem;
+        width: 80%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
             "faq-container"
             "artwork-container";
     }
-
-    h1 {
-        font-size: 25px;
-    }
-
     .pic {
-        width: auto;
-        height: 70vh;
+        width: 70vw;
+        height: auto;
     }
 
     /*    FORM STYLING*/
@@ -130,7 +95,7 @@ hr {
 
 @media only screen and (max-width: 899px) and (min-width: 600px) {
     main {
-        margin: 4rem;
+        margin: 4rem 0;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -138,13 +103,13 @@ hr {
             "artwork-container";
     }
 
-    h1 {
-        font-size: 25px;
-    }
-
     .pic {
         width: auto;
         height: 70vh;
+    }
+    .faq-container{
+        margin: 2rem 4rem;
+        height: 100vh;
     }
 }
 
@@ -152,13 +117,15 @@ hr {
 @media only screen and (min-width: 900px) {
 
     main {
-        margin: 4rem;
+        margin:0 2rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "faq-container artwork-container";
     }
-
+    .artwork-container{
+        margin-top: -4rem;
+    }
     button {
         margin-left: 65%;
         margin-top: 4%;
@@ -171,6 +138,13 @@ hr {
         width: 40vw;
         height: auto;
         z-index: 0;
+    }
+    header{
+        margin-top: 0;
+    }
+    .faq-container{
+        margin-top: 2rem;
+        height: 100vh;
     }
 }
 

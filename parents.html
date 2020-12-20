@@ -7,21 +7,23 @@
     <title>Cherry Pop Site</title>
     <link rel="stylesheet" href="parents.css">
     <link rel="stylesheet" href="http://use.typekit.net/vtd8skk.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="">
+            <div class="burger_menu">
+                <div class="topline"></div>
+                <div class="bottomline"></div>
+            </div>
             <ul>
-                <li> <a href="product.html">Product</a></li>
-                <li> <a href="parents.html">Parents</a></li>
-                <li> <a href="teachers.html">Teachers</a></li>
-                <li> <a href="contact.html">Contact us</a></li>
-
-
+                <li> <a href="product.html">Product</a><div class="dotnav"></div></li>
+                <li class="active"> <a href="parents.html">Parents</a><div class="dotnav"></div></li>
+                <li> <a href="teachers.html">Teachers</a><div class="dotnav"></div></li>
+                <li> <a href="contact.html">Contact us</a><div class="dotnav"></div></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
@@ -32,7 +34,7 @@
             <div class="faq">
 
                 <h1>Frequently Asked Questions</h1>
-                <hr>
+                <div class="underline"></div>
                 <div id="templateID">
                     <h2 class="faq-question"></h2>
                     <p class="faq-answer"></p>
@@ -47,9 +49,29 @@
         </div>
 
     </main>
+    <footer>
+        <div class="cherry-info">
+            <div class="phone-info">
+                <img class="icon-mail" src="img/phone-black.svg" alt="black outlined phone icon">
+                <p>+45 11 22 33 44</p>
+            </div>
 
+            <div class="mail-info">
+                <img class="icon-mail" src="img/mail-black.svg" alt="black outlined mail icon">
+                <p>cherry_pop@gmail.com</p>
+            </div>
+        </div>
 
+        <img class="logo hidden" src="img/logo-green.png" alt="logo with mint green outlining of breats looking like a cherry">
 
+        <div class="cherry-address">
+            <p>KEA Copenhagen School of
+                design and technology
+                Guldbergsgade 29N
+                2200 København</p>
+        </div>
 
+    </footer>
+<script src="menu.js"></script>
     <script src="pods.js"></script>
 </body></html>
