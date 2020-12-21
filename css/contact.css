@@ -75,6 +75,7 @@ body {
     .img-team{
         width: 45%;
         max-width: 200px;
+        max-height: 200px;
     }
 
     .questions-text {
