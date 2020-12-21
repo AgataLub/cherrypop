@@ -1,0 +1,128 @@
+
+:root {
+    --bg-color: #62D7C5;
+    --link-color: #FFFFFF;
+    --link-hover-color: ;
+    --pink-color: #FF0760;
+    --light-grey: #909090;
+    --primary-font: 'objektiv-mk2', sans-serif;
+    --main-text-color: #000000;
+
+    --white-space: 1.2rem;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 18px;
+    position: absolute;
+    width: 100vw;
+}
+#contact > p >a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0;
+    cursor: pointer;
+}
+* {
+    box-sizing: border-box;
+}
+.background {
+    position: absolute;
+    opacity: 50%;
+    display: flex;
+    z-index: -1;
+   top: 4rem;
+   left: 40vw;
+   width: 40vw;
+
+}
+
+#contact_form > #amount > h3 {
+    color: var(--black);
+    font-weight: 200;
+}
+#contact_form > #amount > h4{
+    background-color: var(--white);
+    color:var(--light-grey);
+    border-radius: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+#contact_form > #amount{
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media only screen and (max-width: 899px) {
+    main {
+        margin: 2rem;
+       display: flex;
+       flex-direction: inline;
+    }
+    .background {
+        display: none;
+    }
+    button.main {
+        width: 15%;
+        font-size: 0.6em;
+        margin-left: 50%;
+    }
+    #contact_form.licensecont >h3, #contact_form.licensecont >h4{
+        margin: 0.25rem;
+    }
+    #contact_form{
+        padding-top: 3rem;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width:1199px) {
+    section{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 3rem;
+    }
+    #contact_form.licensecont{
+        max-width: 650px;
+        width: 40vw;
+    }
+    #contact{
+        padding-top: 2rem;
+    }
+    #contact_form.licensecont >h3, #contact_form.licensecont >h4{
+        margin: 0.25rem;
+    }
+    #contact_form{
+        padding-top: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {    
+    section{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 3rem;
+    }
+    #contact{
+        padding-top: 2rem;
+    }
+    #contact_form.licensecont{
+        max-width: 650px;
+        width: 40vw;
+    }
+    #contact_form.licensecont >h3, #contact_form.licensecont >h4{
+        margin: 0.25rem;
+    }
+    #contact_form{
+        padding-top: 3rem;
+        padding-right: 3rem;
+    }
+}
+

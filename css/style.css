@@ -83,7 +83,7 @@ nav.open > ul{
     background-color: var(--teal-color);
     margin: 0;
     transition: .5s;
-    padding: 4rem;
+    /* padding: 4rem; */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -175,6 +175,7 @@ li.active > .dotnav{
 }
 
 footer {
+    margin:0;
     padding: 1rem;
     background-color: var(--white);
     width: auto;
@@ -182,6 +183,30 @@ footer {
     flex-direction: column;
     justify-content: center;
 
+}
+
+
+/* FORM STYLING*/
+
+#contact_form > h3 {
+    color: var(--black);
+    font-weight: 200;
+}
+#contact_form > h4{
+    background-color: var(--white);
+    color:var(--light-grey);
+    border-radius: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+#contact_form > h4.longinput{
+    height: 6rem;
+}
+#contact_form{
+    display: flex;
+    flex-direction: column;
 }
 
 

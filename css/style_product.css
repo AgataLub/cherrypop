@@ -96,27 +96,6 @@ ol > li > p{
     display: none;
 }
 
-#contact_form > h3 {
-    color: var(--black);
-    font-weight: 200;
-}
-#contact_form > h4{
-    background-color: var(--white);
-    color:var(--light-grey);
-    border-radius: 1.5rem;
-    width: 100%;
-    padding: 1rem;
-    font-weight: 200;
-    font-size: 0.9rem;
-}
-#contact_form > h4.longinput{
-    height: 6rem;
-}
-#contact_form{
-    display: flex;
-    flex-direction: column;
-}
-
 #instagram{
     background-color: var(--white);
     display: grid;
